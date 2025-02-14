@@ -14,7 +14,7 @@ showBorderAroundInputs = true
 font = "Inter"
 
 [[theme.fontFaces]]
-url = "http://localhost:8502/app/static/Inter-VariableFont_opsz,wght.ttf"
+url = "app/static/Inter-VariableFont_opsz,wght.ttf"
 family = "Inter"
 font-weight = "100 900"
 
