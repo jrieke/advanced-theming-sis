@@ -12,6 +12,56 @@ st.set_page_config("SiS theme", "❄️", initial_sidebar_state="collapsed")
 st.logo("https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg")
 st.title("SiS theme")
 
+if st.checkbox("Enable CSS hacks", True):
+    st.html(
+        """
+        <style>
+        .stSidebar > div:nth-of-type(2) > div > div {
+            background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
+        }
+        
+        .stCode pre {
+            background-color: #f7f7f7;
+        }
+        
+        h1 {
+            font-size: 32px !important;
+            font-weight: 700 !important;
+        }
+        
+        h2 {
+            font-size: 20px !important;
+            font-weight: 700 !important;
+        }
+        
+        h3 {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
+            background-color: #d6e6ff !important;
+            color: #002c6e !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
+            background-color: #ffedcd !important;
+            color: #653e02 !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
+            background-color: #bdf9ea !important;
+            color: #024238 !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
+            background-color: #ffd1dc !important;
+            color: #66000e !important;
+        }
+        </style>
+        """
+    )
+
 
 def page1():
     pass

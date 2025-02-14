@@ -4,11 +4,15 @@ enableStaticServing = true
 [theme]
 primaryColor = "#1A6CE7"
 backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F7F7F7"
+secondaryBackgroundColor = "#fbfbfb"
+sidebarBackgroundColor = "#F7F7F7"
+sidebarSecondaryBackgroundColor = "#fbfbfb"
 textColor = "#1E252F"
 borderColor = "#D6DAE5"
 showBorderAroundInputs = true
 font = "Inter"
+baseFontSize = 14
+roundness = 0.355
 
 [[theme.fontFaces]]
 url = "app/static/Inter-VariableFont_opsz,wght.ttf"
