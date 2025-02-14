@@ -2,9 +2,6 @@
 enableStaticServing = true
 
 [theme]
-# SiS
-# - dataframe border is slightly different, #E8E9EA
-# - need to get complete list of what else they are changing
 primaryColor = "#1A6CE7"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F7F7F7"
