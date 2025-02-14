@@ -1,0 +1,20 @@
+[server]
+enableStaticServing = true
+
+[theme]
+# SiS
+# - dataframe border is slightly different, #E8E9EA
+# - need to get complete list of what else they are changing
+primaryColor = "#1A6CE7"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F7F7"
+textColor = "#1E252F"
+borderColor = "#D6DAE5"
+showBorderAroundInputs = true
+font = "Inter"
+
+[[theme.fontFaces]]
+url = "http://localhost:8502/app/static/Inter-VariableFont_opsz,wght.ttf"
+family = "Inter"
+font-weight = "100 900"
+
