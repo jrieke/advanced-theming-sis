@@ -11,11 +11,15 @@ textColor = "#1E252F"
 borderColor = "#D6DAE5"
 showBorderAroundInputs = true
 font = "Inter"
+codeFont = "Apercu Mono Pro"
 baseFontSize = 14
 roundness = 0.355
 
 [[theme.fontFaces]]
 url = "app/static/Inter-VariableFont_opsz,wght.ttf"
 family = "Inter"
-font-weight = "100 900"
+
+[[theme.fontFaces]]
+url = "app/static/ApercuMonoProRegular.ttf"
+family = "Apercu Mono Pro"
 
