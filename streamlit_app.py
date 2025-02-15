@@ -24,7 +24,7 @@ if st.checkbox("Enable CSS hacks", True):
             background-color: #f7f7f7;
         }
         
-        .stCode span, .stHelp div, .stJson div {
+        .stCode span, .stHelp div, .stJson div, code {
             font-size: 13.5px !important;
         }
         
