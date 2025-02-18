@@ -13,75 +13,102 @@ st.logo("https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg"
 st.title("SiS theme")
 
 if st.checkbox("Enable CSS hacks", True):
+    
+    codeBackgroundColor = "#f7f7f7"
+    codeFontSize = "13.5px"
+    
+    titleFontSize = "32px"
+    titleFontWeight = "700"
+    headerFontSize = "20px"
+    headerFontWeight = "700"
+    subheaderFontSize = "16px"
+    subheaderFontWeight = "700"
+    
+    infoBackgroundColor = "#d6e6ff"
+    infoTextColor = "#002c6e"
+    warningBackgroundColor = "#ffedcd"
+    warningTextColor = "#653e02"
+    successBackgroundColor = "#bdf9ea"
+    successTextColor = "#024238"
+    errorBackgroundColor = "#ffd1dc"
+    errorTextColor = "#66000e"
+    
+    pageTextColor = "#5d6a85"
+    pageFontWeight = "600"
+    pageHoverBackgroundColor = "#dfe3ea"
+    activePageBackgroundColor = "#d4e7ff"
+    activePageHoverBackgroundColor = "#d4e7ff"
+    activePageTextColor = "#085bd7"
+    
     st.html(
-        """
+        f"""
         <style>
-        .stSidebar > div:nth-of-type(2) > div > div {
+        .stSidebar > div:nth-of-type(2) > div > div {{
             background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
-        }
+        }}
         
-        .stCode pre {
-            background-color: #f7f7f7;
-        }
+        .stCode pre {{
+            background-color: {codeBackgroundColor};
+        }}
         
-        .stCode span, .stHelp div, .stJson div, code {
-            font-size: 13.5px !important;
-        }
+        .stCode span, .stHelp div, .stJson div, code {{
+            font-size: {codeFontSize} !important;
+        }}
         
-        h1 {
-            font-size: 32px !important;
-            font-weight: 700 !important;
-        }
+        h1 {{
+            font-size: {titleFontSize} !important;
+            font-weight: {titleFontWeight} !important;
+        }}
         
-        h2 {
-            font-size: 20px !important;
-            font-weight: 700 !important;
-        }
+        h2 {{
+            font-size: {headerFontSize} !important;
+            font-weight: {headerFontWeight} !important;
+        }}
         
-        h3 {
-            font-size: 16px !important;
-            font-weight: 700 !important;
-        }
+        h3 {{
+            font-size: {subheaderFontSize} !important;
+            font-weight: {subheaderFontWeight} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
-            background-color: #d6e6ff !important;
-            color: #002c6e !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {{
+            background-color: {infoBackgroundColor} !important;
+            color: {infoTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
-            background-color: #ffedcd !important;
-            color: #653e02 !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {{
+            background-color: {warningBackgroundColor} !important;
+            color: {warningTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
-            background-color: #bdf9ea !important;
-            color: #024238 !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {{
+            background-color: {successBackgroundColor} !important;
+            color: {successTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
-            background-color: #ffd1dc !important;
-            color: #66000e !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {{
+            background-color: {errorBackgroundColor} !important;
+            color: {errorTextColor} !important;
+        }}
         
         /* First page in sidebar nav */
-        [data-testid="stSidebarNav"] li:first-of-type a {
-            background-color: #d4e7ff !important;
-        }
-        [data-testid="stSidebarNav"] li:first-of-type a:hover {
-            background-color: #d4e7ff !important;
-        }
-        [data-testid="stSidebarNav"] li:first-of-type a span {
-            color: #085bd7 !important;
-        }
+        [data-testid="stSidebarNav"] li:first-of-type a {{
+            background-color: {activePageBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li:first-of-type a:hover {{
+            background-color: {activePageHoverBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li:first-of-type a span {{
+            color: {activePageTextColor} !important;
+        }}
         
         /* Other pages in sidebar nav */
-        [data-testid="stSidebarNav"] li a:hover {
-            background-color: #dfe3ea !important;
-        }
-        [data-testid="stSidebarNav"] li a span {
-            color: #5d6a85 !important;
-            font-weight: 600 !important;
-        }
+        [data-testid="stSidebarNav"] li a:hover {{
+            background-color: {pageHoverBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li a span {{
+            color: {pageTextColor} !important;
+            font-weight: {pageFontWeight} !important;
+        }}
         </style>
         """
     )
