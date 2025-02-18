@@ -43,7 +43,7 @@ if st.checkbox("Enable CSS hacks", True):
     st.html(
         f"""
         <style>
-        .stSidebar > div:nth-of-type(2) > div > div {{
+        .stSidebar > div:last-of-type > div > div {{
             background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
         }}
         
