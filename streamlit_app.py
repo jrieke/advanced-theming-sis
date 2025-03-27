@@ -13,8 +13,6 @@ st.logo("https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg"
 st.title("SiS theme")
 
 if st.checkbox("Enable CSS hacks", True):
-    
-    codeBackgroundColor = "#f7f7f7"
     codeFontSize = "13.5px"
     
     titleFontSize = "32px"
@@ -43,13 +41,7 @@ if st.checkbox("Enable CSS hacks", True):
     st.html(
         f"""
         <style>
-        .stSidebar > div:last-of-type > div > div {{
-            background-image: linear-gradient(to right, transparent 20%, rgba(34, 34, 34, 0.3) 28%, transparent 36%);
-        }}
         
-        .stCode pre {{
-            background-color: {codeBackgroundColor};
-        }}
         
         .stCode span, .stHelp div, .stJson div, code {{
             font-size: {codeFontSize} !important;

@@ -5,15 +5,18 @@ enableStaticServing = true
 primaryColor = "#1A6CE7"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#fbfbfb"
-sidebarBackgroundColor = "#F7F7F7"
-sidebarSecondaryBackgroundColor = "#fbfbfb"
 textColor = "#1E252F"
 borderColor = "#D6DAE5"
-showBorderAroundInputs = true
+showWidgetBorder = true
 font = "Inter"
 codeFont = "Apercu Mono Pro"
 baseFontSize = 14
-roundness = 0.355
+baseRadius = "0.6rem"
+codeBackgroundColor = "#f7f7f7"
+
+[theme.sidebar]
+backgroundColor = "#F7F7F7"
+secondaryBackgroundColor = "#fbfbfb"
 
 [[theme.fontFaces]]
 url = "app/static/Inter-VariableFont_opsz,wght.ttf"
