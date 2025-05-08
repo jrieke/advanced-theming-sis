@@ -8,9 +8,9 @@ import plotly.express as px
 import pydeck as pdk
 import streamlit as st
 
-st.set_page_config("SiS theme", "❄️")
+st.set_page_config("Snowflake theme", "❄️")
 st.logo("https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg")
-st.title("SiS theme")
+st.title("Snowflake theme")
 
 if st.checkbox("Enable CSS hacks", True):
     codeFontSize = "13.5px"
